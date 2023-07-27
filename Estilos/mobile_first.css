@@ -7,7 +7,11 @@
     --cor3: #34609F ;
     --cor4: #5D88BD ;
     --cor5: #D4F1FF ;
-
+    --cor6: #25403D;
+    --cor7: #4C736F;
+    --cor8: #8AA6A1;
+    --cor9: #B8D9D0;
+    --cor10: #0D0D0D;
 }
     /* reset*/
 *{
@@ -20,7 +24,7 @@
 
 body , html {
 
-    background-color: var(--cor4) ;
+    background-color: var(--cor7) ;
     height: 100vh;
     width: 100vw;
 
@@ -40,17 +44,20 @@ section#login {
     transform: translate(-50%,-50%) ;
 
     overflow: hidden; /* tudo que estiver fora da borda vai fica escondido */
-    background-color:var(--cor5) ;
+    background-color:var(--cor8) ;
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px var(--cor1);
+    box-shadow: 0px 0px 5px var(--cor6);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ea;
 
 }
 
 section#login > div#imagem {
     display: block;
-    background: var(--cor4) url(../Imagens/fundo_login2.jpg) no-repeat ;
+    background: var(--cor6) url(../Imagens/fundo_login1.jpg) no-repeat ;
     background-size: cover;
     height: 200px;
 }
