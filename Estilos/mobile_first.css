@@ -7,6 +7,7 @@
     --cor3: #34609F ;
     --cor4: #5D88BD ;
     --cor5: #D4F1FF ;
+
     --cor6: #25403D;
     --cor7: #4C736F;
     --cor8: #8AA6A1;
@@ -51,7 +52,9 @@ section#login {
     box-shadow: 0px 0px 5px var(--cor6);
 
     transition: width 0.3s, height 0.3s;
-    transition-timing-function: ea;
+    transition-timing-function: ease;
+
+    background-position: left bottom;
 
 }
 
@@ -65,4 +68,13 @@ section#login > div#imagem {
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+div#formulario {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }

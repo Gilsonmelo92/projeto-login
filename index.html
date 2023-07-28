@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/mobile_first.css">
     <link rel="stylesheet" href="Estilos/media_query.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
@@ -24,7 +26,29 @@
 
                  </p>
 
-                 <form action="login.js" method="post"> 
+                 <form action="login.js" method="post" autocomplete="on"> 
+
+                    <div class="campo">
+
+
+                        <i class="material-icons md-36">person</i>
+
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+
+                        <label for="ilogin">Login:</label>
+                    </div>
+                    
+                    <div class="campo"> 
+                        <i class="material-icons md-36">vpn_key</i>
+                        
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" requered minlength="8" maxlength="20">
+                    
+                        <label for="isenha">Senha:</label>
+
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="#"> Esqueci a senha <i class="material-icons">mail</i></a>
 
                  </form>
             </div>
